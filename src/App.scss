@@ -1,0 +1,89 @@
+/**
+ * @App scss for (Template/Project Name)
+ * @project     - API SmartDoorbell
+ * @author      - 
+ * @created_by  - kawsar bin siraj
+ * @created_at  - 14-10-2021
+ * @modified_by -
+ */
+
+/* reset, root */
+*:focus {
+    box-shadow: none !important;
+}
+
+:root {
+    --clr-dark: #181a48;
+    --clr-blue: #5138ee;
+    --clr-green: #2bd67b;
+    --clr-sunset-orange: #f76d6d;
+}
+
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1140px !important;
+    }
+}
+
+/* reset, root -END */
+
+/* helper classes */
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.is-blue-gradient {
+    background-image: radial-gradient(100% 100% at 100% 0%, rgb(90, 218, 255) 0%, rgb(84, 104, 255) 100%);
+}
+
+.is-shadow {
+    box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+}
+
+.is-drop-shadow {
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.btn-smartDoorBell {
+    color: var(--bs-white) !important;
+    border: 0;
+    background-image: radial-gradient(100% 100% at 100% 0%, rgb(90, 218, 255) 0%, rgb(84, 104, 255) 100%);
+    box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+    background-position: 0 0px;
+    transition: all 0.3s linear !important;
+
+    &:hover {
+        background-position: 0px 45px;
+        color: var(--bs-white) !important;
+    }
+}
+
+
+.form-check {
+    &.form-check-md {
+        >input {
+            transform: scale(2)
+        }
+    }
+
+    &.form-check-lg {
+        >input {
+            transform: scale(3)
+        }
+    }
+}
+
+.candidate-img {
+    --size: 50px;
+    width: var(--size);
+    width: var(--size);
+    object-fit: cover;
+    object-position: top;
+}
+
+/* helper classes -END */
