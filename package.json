@@ -3,7 +3,7 @@
   "name": "api-evote",
   "version": "0.1.0",
   "private": true,
-  "node": "14.21.3",
+  "node": "v14.21.3",
   "dependencies": {
     "@hookform/resolvers": "^2.8.2",
     "@testing-library/jest-dom": "^5.14.1",
